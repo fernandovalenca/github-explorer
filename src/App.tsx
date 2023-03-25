@@ -1,17 +1,11 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-
-import Routes from './routes';
-
-import { GlobalStyle } from './styles/Global';
+import React from "react";
+import Routes from "./routes";
+import { GlobalStyle } from "./styles/global";
 
 const App: React.FunctionComponent = () => (
-    < >
-    <GlobalStyle />
-    <BrowserRouter>
-        <Routes />
-    </BrowserRouter>
-    </>
+  <React.Fragment>
+    <Routes />
+  </React.Fragment>
 );
 
 export default App;
